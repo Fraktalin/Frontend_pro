@@ -8,7 +8,7 @@ console.log('Добавляем в начало массива--> ', secondNumbe
 
 var technology = ['js', 'css', 'jq'];
 console.log('Превый элемент массива--> ', technology[0]);
-console.log('Последний элемент массива--> ', technology[technology.length - 1]);
+console.log('Последний элемент массива--> ',technology[technology.length - 1]);
 
 var furthNumbers = [1, 2, 3, 4, 5];
 var fifthNumbers = furthNumbers.slice(0, 3);
