@@ -1,15 +1,12 @@
 var letters = 'aaa bbb ccc';
 console.log("Строка-->", letters);
-var lettersb = letters.substr(0, 3);
-lettersb += letters.substr(7, 9);
+var lettersb = letters.substr(3, 4);
 console.log("Вырезанно через 'substr'-->", lettersb);
 
-var lettersb2 = letters.substring(0, 3);
-lettersb2 += letters.substring(7, 11);
+var lettersb2 = letters.substring(3, 7);
 console.log("Вырезанно через 'substring'-->", lettersb2);
 
-var lettersb3 = letters.slice(0, 3);
-lettersb3 += letters.slice(7, 11);
+var lettersb3 = letters.slice(3, 7);
 console.log("Вырезанно через 'slice'-->", lettersb3);
 
 console.log('///////////////////////////////////////////////////////////////|-< Задание № 2 >-|//////////////////////////////////////////////////////////////');
@@ -27,21 +24,7 @@ console.log('///////////////////////////////////////////////////////////////|-< 
 var sentence = 'var_test_text';
 console.log("Дана строка -->", sentence);
 var noUnderscore = [];
-if (sentence.includes('_') ==true) {
-  noUnderscore = sentence.split('_');
-}
-else if (sentence.includes('-') ==true) {
-  noUnderscore = sentence.split('-');
-}
-else if (sentence.includes('+') ==true) {
-  noUnderscore = sentence.split('+');
-}
-else if (sentence.includes('/') ==true) {
-  noUnderscore = sentence.split('/');
-}
-else if (sentence.includes('|') ==true) {
-  noUnderscore = sentence.split('|');
-}
+noUnderscore = sentence.split('_');
 var newSentence = "";
 for (var i = 0; i < noUnderscore.length; i++) {
   if (i == 0) {
