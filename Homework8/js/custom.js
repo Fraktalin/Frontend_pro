@@ -26,22 +26,7 @@ console.log('///////////////////////////////////////////////////////////////|-< 
 
 var sentence = 'var_test_text';
 console.log("Дана строка -->", sentence);
-var noUnderscore = [];
-if (sentence.includes('_') ==true) {
-  noUnderscore = sentence.split('_');
-}
-else if (sentence.includes('-') ==true) {
-  noUnderscore = sentence.split('-');
-}
-else if (sentence.includes('+') ==true) {
-  noUnderscore = sentence.split('+');
-}
-else if (sentence.includes('/') ==true) {
-  noUnderscore = sentence.split('/');
-}
-else if (sentence.includes('|') ==true) {
-  noUnderscore = sentence.split('|');
-}
+var noUnderscore = noUnderscore = sentence.split('_');
 var newSentence = "";
 for (var i = 0; i < noUnderscore.length; i++) {
   if (i == 0) {
