@@ -1,0 +1,19 @@
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style-type: none;
+}
+.company-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.company-item {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 8px;
+  background: lightgrey;
+}
