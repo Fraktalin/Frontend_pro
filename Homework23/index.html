@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style/main.css">
+</head>
+
+<body>
+  <form>
+    <h1>Форма расчета шкафа</h1>
+    <fieldset>
+      <legend>Параметры шкафа</legend>
+      <label>
+        Длина
+        <input type="text" id="cabinet_length" name="cabinet_length" placeholder="Введите длину" required>
+        <span>См</span>
+      </label>
+      <label>
+        Высота
+        <input type="text" id="cabinet_height" name="cabinet_height" placeholder="Введите высоту" required>
+        <span>См</span>
+      </label>
+      <label>
+        Ширина
+        <input type="text" id="cabinet_width" name="cabinet_width" placeholder="Введите ширину" required>
+        <span>См</span>
+      </label>
+      <span class="disclaimer">*Для правильного расчета стоимости укажите все параметры</span>
+      <span class="disclaimer-small">*Обратите внимание мы не изготавливаем шкафы длинее чем 400 см, выше 300 см и шире 100 см</span>
+    </fieldset>
+    <fieldset>
+      <legend>Выберите количество полок</legend>
+      <label>
+        По вертикали
+        <input type="range" id="cabinet_vertical_shelf" name="cabinet_vertical_shelf" step="1" min="1" max="10">
+        <span id="amount_vertical">6</span>
+      </label>
+      <label>
+        По горизонтали
+        <input type="range" id="cabinet_horizontal_shelf" name="cabinet_horizontal_shelf" step="1" min="1" max="10">
+        <span id="amount_horizontal">6</span>
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Материал двери</legend>
+      <label>
+        <input name="material" id="cabinet_material_wood" type="radio" checked value="cabinet_material_wood"> Дерево
+      </label>
+      <label>
+        <input name="material" id="cabinet_material_glass" type="radio" value="cabinet_material_glass"> Стекло
+      </label>
+      <label>
+        <input name="material" id="cabinet_material_mirror" type="radio" value="cabinet_material_mirror"> Зеркало
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Выберите фурнитуру</legend>
+      <label>
+        Фурнитура
+        <select id="cabinet_furniture" name="select">
+          <option value="cabinet_furniture_handles">Ручки</option>
+          <option value="cabinet_furniture_hole">Отверстия</option>
+          <option value="cabinet_furniture_combined">Комбинированные</option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Доставка</legend>
+      <label>
+        <input id="cabinet_delivery" type="checkbox" name="cabinet_delivery" value="delivery">Доставка
+      </label>
+      <label>
+        <input id="cabinet_installation" type="checkbox" name="cabinet_installation" value="installation">Сборка
+      </label>
+      <label>
+        <input id="cabinet_lifting" type="checkbox" name="cabinet_lifting" value="lifting">Подъем
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Выберите город</legend>
+      Ваш город
+      <input list="user_choise_city" id="user_city" name="user_city" placeholder="Выберите город" required>
+      <datalist id="user_choise_city">
+        <option value="Dnipro">
+        <option value="Kiev">
+        <option value="Kharkov">
+        <option value="Odessa">
+        <option value="Lviv">
+      </datalist>
+    </fieldset>
+  </form>
+  <span>Итого: <span id="total"></span></span>
+  <script src="./js/custom.js"></script>
+</body>
+
+</html>
