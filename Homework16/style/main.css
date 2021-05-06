@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+}
+#blueRect{ 
+  width:100px;
+  height:100px; 
+  background-color:blue; 
+  position: absolute;
+  left: 0;
+  right: 0;
+} 
