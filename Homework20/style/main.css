@@ -1,0 +1,25 @@
+.completed {
+  margin-left: 20px;
+  clear: both;
+  position: relative;
+}
+
+.completed:before {
+content: "";
+width: 10px;
+height: 10px;
+background: #80808036;
+display: block;
+float: left;
+position: absolute;
+left: -15px;
+top: 6px;
+border: 1px solid blue;
+border-radius: 2px;
+}
+.completed-false:before {
+background: red;
+}
+.completed-true:before {
+  background: greenyellow;
+}
