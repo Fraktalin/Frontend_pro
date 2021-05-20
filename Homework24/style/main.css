@@ -11,3 +11,13 @@ span {
   display: flex;
   margin: 5px;
 }
+.wrong-url {
+  background: red;
+  color: black;
+}
+img {
+  max-width: 50px;
+}
+.flex {
+  display: flex;
+}
