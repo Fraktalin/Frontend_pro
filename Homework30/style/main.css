@@ -1,0 +1,15 @@
+.refresh-cookie {
+  cursor: pointer;
+  padding: 20px 40px;
+  background: rgb(0, 255, 0);
+  border:black 1px solid;
+  border-radius: 30px;
+}
+.update {
+  display: none;
+}
+.active {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

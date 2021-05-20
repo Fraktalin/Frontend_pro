@@ -1,0 +1,23 @@
+ul,
+li {
+  display: flex;
+  flex-wrap: wrap;
+}
+li {
+  background: #ccc;
+  margin: 10px;
+}
+span {
+  display: flex;
+  margin: 5px;
+}
+.wrong-url {
+  background: red;
+  color: black;
+}
+img {
+  max-width: 50px;
+}
+.flex {
+  display: flex;
+}
