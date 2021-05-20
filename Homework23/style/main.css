@@ -1,0 +1,40 @@
+input,
+select {
+  display: block;
+  margin: 4px;
+}
+form {
+  max-width:min-content ;
+}
+textarea{
+  resize: none;
+}
+button{
+  display: inline;
+}
+fieldset {
+  margin: 4px;
+  display: flex;
+  flex-direction: column;
+}
+label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+h1 {
+  margin: 0;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly
+}
+.disclaimer {
+  padding-top: 15px;
+  font-size: 14px;
+}
+.disclaimer-small {
+  padding-top: 15px;
+  font-size: 12px;
+}
