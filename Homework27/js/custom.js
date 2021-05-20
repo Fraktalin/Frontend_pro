@@ -7,18 +7,13 @@ let item = 0;
 
 btn.addEventListener('click', cutWords);
 
-function cutWords(e) {
+function cutWords() {
   for (let item of blockText) {
-    let str = item.textContent
-    if (str.length > 10) {
-      str = str.slice(0, 10);
-      str += '...';
-      item.innerText = str;
-    }
+    item.innerText = item.textContent.slice(0, 10) + '...';
   }
 }
 
-function changeColor(i) {
+function changeColor() {
   text.setAttribute('style', `color: ${colors[item]}`);
   item++
   if (item === colors.length) item = 0

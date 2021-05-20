@@ -23,9 +23,6 @@ alert('Пользуясь этим веб-сайтом, вы даете свое
 if (document.cookie) {
   var currentCookie = getCookie();
 }
-else currentCookie = {
-  card: "156158168161",
-};
 
 function autocomplete() {
   for (let i = 0; i < currentCookie.card.length; i++) {

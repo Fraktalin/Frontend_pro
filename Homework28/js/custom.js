@@ -6,8 +6,10 @@ for (item of inputs) {
   item.addEventListener('keypress', checkNum)
 }
 
-function changeInputNext(e) {
-  this.value ? this.nextElementSibling.focus() : null
+function changeInputNext() {
+  if (this.value) {
+    this.nextElementSibling.focus()
+  }
 }
 function checkNum(e) {
   if (e.keyCode < 48 || e.keyCode > 57) {
